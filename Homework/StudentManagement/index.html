@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with logo and title -->
+    <header class="site-header">
+      <img
+        src="/Homework/StudentManagement/school_logo.jpg"
+        alt="School Logo"
+        class="logo"
+      />
+      <h1>Spring Flowers School</h1>
+    </header>
+
+    <!-- Navigation (links to fragment ids) -->
+    <nav class="menu-bar" aria-label="Main menu">
+      <ul>
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#profile">Student Profile</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <!-- Student Profile -->
+      <section id="profile" class="content" tabindex="-1">
+        <h2>Student Profile</h2>
+        <div class="student-card">
+          <img
+            src="/Homework/StudentManagement/student_photo.jpg"
+            alt="Student Photo"
+            class="student-photo"
+          />
+          <p><strong>Name:</strong> Prashant Kumar</p>
+          <p><strong>Class:</strong> 10th Grade</p>
+          <p><strong>Roll No:</strong> 23</p>
+          <p><strong>Section:</strong> A</p>
+          <p><strong>Favorite Subject:</strong> Science</p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="content" tabindex="-1">
+        <h2>About Our School</h2>
+        <p>
+          Spring Flowers School provides quality education with a focus on
+          holistic development and a safe learning environment.
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="content" tabindex="-1">
+        <h2>Contact</h2>
+        <p>Email: pkprashant566@gmail.com</p>
+        <p>Phone: +91 7050746209</p>
+      </section>
+
+      <!-- Welcome placed LAST so :target works correctly -->
+      <section id="welcome" class="content welcome" tabindex="-1">
+        <h2>Welcome to Spring Flowers School 🌸</h2>
+        <p>
+          We are delighted to have you here. Use the menu to view the student
+          profile and other details.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Spring Flowers School</p>
+    </footer>
+  </body>
+</html>
