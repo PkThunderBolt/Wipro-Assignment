@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        greet() {
+          console.log(
+            `Hello my name is ${this.name} and my age is ${this.age} years old`
+          );
+        }
+      }
+
+      const alice = new Person("Alice", 25);
+      alice.greet();
+    </script>
+
+    <script>
+      const bob = new Person("Bob", 30);
+      bob.greet();
+      alert(`Person Details:\nName: ${bob.name}\nAge: ${bob.age}`);
+    </script>
+  </body>
+</html>

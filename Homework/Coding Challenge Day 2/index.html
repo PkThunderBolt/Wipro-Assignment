@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spring Flowers School - Student Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- AUTH AREA -->
+    <div id="authPane" class="auth-container">
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form-card">
+        <h2>Student Login</h2>
+        <label>
+          Username
+          <input type="text" id="loginUser" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="loginPass" required />
+        </label>
+        <button type="button" id="loginBtn" class="btn primary">Login</button>
+        <p>
+          Don't have an account?
+          <button type="button" class="btn-link" id="gotoRegister">
+            Register
+          </button>
+        </p>
+        <p id="authMessage" class="message"></p>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" class="form-card hidden">
+        <h2>Student Register</h2>
+        <label>
+          Username
+          <input type="text" id="regUser" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="regPass" required />
+        </label>
+        <label>
+          Class / Section
+          <input type="text" id="regClass" placeholder="e.g. 10A" />
+        </label>
+        <button type="button" id="registerBtn" class="btn">Register</button>
+        <p>
+          Already have an account?
+          <button type="button" class="btn-link" id="gotoLogin">Login</button>
+        </p>
+        <p id="regMessage" class="message"></p>
+      </form>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="appPane" class="hidden">
+      <header class="site-header">
+        <img src="school_logo.png" alt="School Logo" class="logo" />
+        <div>
+          <h1>Spring Flowers School</h1>
+          <p id="loggedUserInfo" class="muted"></p>
+        </div>
+        <div class="spacer"></div>
+        <button type="button" id="logoutBtn" class="btn danger">Logout</button>
+      </header>
+
+      <nav class="menu-bar">
+        <ul>
+          <li><button class="nav-btn" data-show="welcome">Welcome</button></li>
+          <li>
+            <button class="nav-btn" data-show="profile">Student Profile</button>
+          </li>
+          <li>
+            <button class="nav-btn" data-show="monthly">Monthly Chart</button>
+          </li>
+          <li><button class="nav-btn" data-show="about">About</button></li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <section id="welcome" class="section active">
+          <h2>Welcome</h2>
+          <p>
+            Welcome to Spring Flowers School! At Spring Flowers School, we
+            nurture young minds with care, creativity, and curiosity. Our
+            mission is to provide a safe, joyful, and inspiring environment
+            where every child can bloom to their full potential. Join us on a
+            journey of learning, growth, and endless possibilities!
+          </p>
+        </section>
+
+        <section id="profile" class="section hidden">
+          <h2>Student Profile</h2>
+          <div class="student-card">
+            <img
+              src="student_photo.jpg"
+              alt="Student Photo"
+              class="student-photo"
+            />
+            <div class="student-info">
+              <p><strong>Name:</strong> <span id="profileName">-</span></p>
+              <p>
+                <strong>Class / Section:</strong>
+                <span id="profileClass">-</span>
+              </p>
+              <p><strong>Roll No:</strong> <span id="profileRoll">23</span></p>
+              <p>
+                <strong>Favorite Subject:</strong>
+                <span id="profileFav">Science</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="monthly" class="section hidden">
+          <h2>Monthly Activities</h2>
+
+          <div class="controls">
+            <label>
+              Select Subject:
+              <select id="subjectSelect"></select>
+            </label>
+
+            <label>
+              Select Month:
+              <select id="monthSelect">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="table-wrap">
+            <table class="activities-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Activity</th>
+                  <th>Subject</th>
+                  <th>Month</th>
+                </tr>
+              </thead>
+              <tbody id="activitiesBody"></tbody>
+            </table>
+          </div>
+
+          <div class="note">
+            <p>You can add a new monthly activity.</p>
+            <label>
+              New Activity:
+              <input
+                type="text"
+                id="newActivityText"
+                placeholder="e.g. Complete project on fractions"
+              />
+            </label>
+            <button type="button" id="addActivityBtn" class="btn">
+              Add Activity
+            </button>
+            <p id="activityMsg" class="message"></p>
+          </div>
+        </section>
+
+        <section id="about" class="section hidden">
+          <h2>About</h2>
+          <p>
+            Spring Flowers School is committed to quality education and student
+            development.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2025 Spring Flowers School</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In Js we have map & Set collections via which we can store unique values -->
+    <!-- Map() is a collection of key-value pairs ex  username and password, Transaction details etc -->
+    <!-- Set() is a collection of unique values ex  unique user IDs, unique product codes etc -->
+    <script>
+      // Example of Map
+      const map = new Map();
+      map.set("name", "Alice");
+      map.set("age", 25);
+      console.log("Map Example:");
+      map.forEach((value, key) => {
+        console.log(`${key}: ${value}`);
+      });
+      // Example of Set
+      const set = new Set();
+      set.add(1);
+      set.add(2);
+      set.add(2); // Duplicate value, will be ignored
+      console.log("Set Example:");
+      set.forEach((value) => {
+        console.log(value);
+      });
+    </script>
+  </body>
+</html>

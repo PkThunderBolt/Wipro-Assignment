@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System (ES6 Demo)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #9ef185;
+        color: #2f3640;
+        margin: 30px;
+      }
+      h1 {
+        text-align: center;
+        color: #4d080e;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #273c75;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #40739e;
+      }
+      #output {
+        margin-top: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        color: #3d075c;
+        border-bottom: 5px solid #718093;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Management System (ES6 Demo)</h1>
+    <button id="runDemo">Run Assignment Demo</button>
+
+    <div id="output"></div>
+
+    <script>
+      document.getElementById("runDemo").addEventListener("click", () => {
+        const output = document.getElementById("output");
+        output.innerHTML = "";
+
+        //1.Use of let and const:
+
+        const instituteName = "Indian Institute of Technology";
+        let courseName = "B.Tech Computer Science";
+
+        const basicInfo = `
+        <div class="section">
+          <h2>Course Information</h2>
+          <p><strong>Institute:</strong> ${instituteName}</p>
+          <p><strong>Course:</strong> ${courseName}</p>
+        </div>
+      `;
+        output.innerHTML += basicInfo;
+
+        //2.Use of Spread Operator -->
+
+        const coreSubjects = ["Java", "SQL", "SpringBoot"];
+        const advancedSubjects = ["AI", "Machine Learning", "JavaScript"];
+        const allSubjects = [...coreSubjects, ...advancedSubjects];
+
+        const subjectsInfo = `
+        <div class="section">
+          <h2>Subjects</h2>
+          <p><strong>Core Subjects:</strong> ${coreSubjects.join(", ")}</p>
+          <p><strong>Advanced Subjects:</strong> ${advancedSubjects.join(
+            ", "
+          )}</p>
+          <p><strong>All Subjects:</strong> ${allSubjects.join(", ")}</p>
+        </div>
+      `;
+        output.innerHTML += subjectsInfo;
+
+        //3 Use of Arrow Function:
+        const greet = (name) => `Welcome, ${name}! Glad to have you here.`;
+
+        // 4 Use of Class:
+        class Student {
+          constructor(name, age, skills) {
+            this.name = name;
+            this.age = age;
+            this.skills = skills;
+          }
+
+          display() {
+            return `<p><strong>Name:</strong> ${this.name}<br>
+                  <strong>Age:</strong> ${this.age}<br>
+                  <strong>Skills:</strong> ${this.skills.join(", ")}</p>`;
+          }
+        }
+
+        const student1 = new Student("PK", 24, [
+          "C++",
+          "HTML",
+          "CSS",
+          "Java",
+          "SpringBoot",
+          "SQL",
+        ]);
+        const student2 = new Student("NK", 23, [
+          "Java",
+          "C++",
+          "SQL",
+          "JavaScript",
+        ]);
+
+        const studentDetails = `
+        <div class="section">
+          <h2>Student Details</h2>
+          <p>${greet(student1.name)}</p>
+          ${student1.display()}
+          <p>${greet(student2.name)}</p>
+          ${student2.display()}
+        </div>
+      `;
+        output.innerHTML += studentDetails;
+
+        // 5 Use of Map Object:
+        const studentGrades = new Map();
+        studentGrades.set("PK", "A");
+        studentGrades.set("NK", "B+");
+
+        let gradesList = "";
+        studentGrades.forEach((grade, name) => {
+          gradesList += `<li>${name}: ${grade}</li>`;
+        });
+
+        const gradesSection = `
+        <div class="section">
+          <h2>Student Grades (Map Example)</h2>
+          <ul>${gradesList}</ul>
+        </div>
+      `;
+        output.innerHTML += gradesSection;
+
+        // 6. Set
+        const allSkills = [...student1.skills, ...student2.skills];
+        const uniqueSkills = new Set(allSkills);
+
+        const skillsSection = `
+        <div class="section">
+          <h2>Unique Skills (Set Example)</h2>
+          <p>${[...uniqueSkills].join(", ")}</p>
+        </div>
+      `;
+        output.innerHTML += skillsSection;
+      });
+    </script>
+  </body>
+</html>
