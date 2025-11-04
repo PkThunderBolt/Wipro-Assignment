@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.App {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.section {
+  border-radius: 14px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.yellow-bg {
+  background-color: #fff7cc;
+}
+
+.green-bg {
+  background-color: #d6f5d6;
+}
+
+.gray-bg {
+  background-color: #f0f0f0;
+}
+
+.blue-bg {
+  background-color: #dceeff;
+}
+
+.purple-bg {
+  background-color: #f2e5ff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
