@@ -1,0 +1,15 @@
+{
+  "name": "event-management-database",
+  "version": "1.0.0",
+  "description": "Database integration module for Event Management System",
+  "main": "db.js",
+  "scripts": {
+    "demo": "node demo.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "keywords": ["database", "crud", "sqlite", "events", "customers"],
+  "author": "Assessment",
+  "license": "MIT"
+}

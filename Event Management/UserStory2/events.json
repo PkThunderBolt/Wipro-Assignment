@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Music Fest 2025",
+    "short": "A grand celebration of music and culture.",
+    "category": "Music",
+    "date": "2025-11-20",
+    "location": "Bangalore",
+    "image": "https://cdn.shopify.com/s/files/1/0445/3321/9490/files/happy-people-dance-nightclub-party-concert_480x480.jpg?v=1686381835"
+  },
+  {
+    "id": 2,
+    "title": "Tech Expo 2025",
+    "short": "Explore the latest in tech innovation.",
+    "category": "Technology",
+    "date": "2025-12-05",
+    "location": "Hyderabad",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEqciiOwWW81nACtJJCP8WG6LcY1FqTXXTw&s"
+  },
+  {
+    "id": 3,
+    "title": "Food Carnival 2025",
+    "short": "Taste cuisines from all over the world!",
+    "category": "Food",
+    "date": "2025-12-10",
+    "location": "Delhi",
+    "image": "https://images.slurrp.com/prodrich_article/zudk0aexzz.webp?impolicy=slurrp-20210601&width=880&height=500"
+  },
+  {
+    "id": 4,
+    "title": "Startup Summit 2025",
+    "short": "Meet top entrepreneurs and investors.",
+    "category": "Business",
+    "date": "2026-01-15",
+    "location": "Mumbai",
+    "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/startup_summit_v1.max-2500x2500.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Wipro Summit 2025",
+    "short": "Meet Wipro CEO and investors.",
+    "category": "Business",
+    "date": "2026-01-15",
+    "location": "Hyderabad",
+    "image": "https://dcs.aero/wp-content/uploads/2022/04/Wipro-logo.png"
+  },
+  {
+    "id": 6,
+    "title": "DJ Night 2025",
+    "short": "Come with your partner to do Dance.",
+    "category": "Music",
+    "date": "2026-01-15",
+    "location": "Mumbai",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabHgFq5uwrG9gbp98WVYxIgCuqko5FB5bMQ&s"
+  }
+]

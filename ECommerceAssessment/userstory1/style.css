@@ -1,0 +1,40 @@
+/* ========== GENERAL PAGE STYLING ========== */
+html,
+body {
+  height: 100%; /* ensures the body takes full height of the viewport */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* allows footer to stay at the bottom */
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Makes main area grow to push footer down */
+main {
+  flex: 1;
+}
+
+/* ========== PRODUCT CARD DESIGN ========== */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(64 136 209) !important;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== NEWSLETTER FORM ========== */
+.newsletter-form input {
+  max-width: 400px;
+}
+
+/* ========== FOOTER STYLING ========== */
+footer {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- Base ---------- */
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #fef6e4, #fdf2f8, #f3f8ff);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff6b35;
+      margin: 30px 0;
+      font-size: 2rem;
+    }
+
+    /* ---------- Filters ---------- */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 30px;
+    }
+
+    select {
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 2px solid #ff6b35;
+      background: white;
+      font-size: 15px;
+      cursor: pointer;
+      color: #333;
+      font-weight: 500;
+    }
+
+    select:hover {
+      background: #ff6b35;
+      color: white;
+    }
+
+    /* ---------- Loading & Error ---------- */
+    #loading {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      margin: 20px;
+    }
+
+    #error-message {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* ---------- Product Grid ---------- */
+    #product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      padding: 0 40px 40px;
+      justify-items: center;
+    }
+
+    /* ---------- Product Card ---------- */
+    .product-card {
+      width: 100%;
+      max-width: 280px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f3f3f3;
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      color: #222;
+      margin: 5px 0;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      margin: 3px 0;
+      color: #555;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #007b55;
+      font-size: 1rem;
+    }
+
+    /* ---------- Empty State ---------- */
+    .empty {
+      text-align: center;
+      font-size: 18px;
+      color: #999;
+      margin-top: 40px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      background: #ff6b35;
+      color: white;
+      padding: 15px 0;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      select {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+
+      .product-card {
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🛒 Explore Our Products</h1>
+
+  <!-- Filters -->
+  <div class="filters">
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Home & Kitchen">Home & Kitchen</option>
+      <option value="Sports">Sports</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <select id="price-filter">
+      <option value="all">All Prices</option>
+      <option value="low">Below ₹1000</option>
+      <option value="medium">₹1000 - ₹5000</option>
+      <option value="high">Above ₹5000</option>
+    </select>
+  </div>
+
+  <!-- Loading message -->
+  <div id="loading">Loading products...</div>
+
+  <!-- Product container -->
+  <div id="product-list"></div>
+
+  <!-- Error message -->
+  <div id="error-message"></div>
+
+  <!-- Footer -->
+  <footer>Developed by Prashant Kumar</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
