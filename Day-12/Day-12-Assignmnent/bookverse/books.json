@@ -1,0 +1,106 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 499,
+      "image": "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
+      "bio": "James Clear is a writer and speaker focused on habits, decision-making, and continuous improvement. His work has inspired millions worldwide.",
+      "topBooks": [
+        "Atomic Habits",
+        "Transform Your Habits",
+        "The Power of Systems"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 299,
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+      "bio": "Paulo Coelho is a Brazilian author whose deeply philosophical novels have inspired readers to follow their dreams and listen to their hearts.",
+      "topBooks": ["The Alchemist", "Brida", "Eleven Minutes"]
+    },
+    {
+      "id": 3,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg",
+      "bio": "Robert T. Kiyosaki is an entrepreneur and investor best known for his personal finance books that teach financial literacy and independence.",
+      "topBooks": [
+        "Rich Dad Poor Dad",
+        "Cashflow Quadrant",
+        "Guide to Investing"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 349,
+      "image": "https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UF1000,1000_QL80_.jpg",
+      "bio": "Harper Lee was an American novelist widely known for 'To Kill a Mockingbird', a timeless classic addressing racial injustice and moral growth.",
+      "topBooks": ["To Kill a Mockingbird", "Go Set a Watchman"]
+    },
+    {
+      "id": 5,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 450,
+      "image": "https://m.media-amazon.com/images/I/71din4TLubL._UF1000,1000_QL80_.jpg",
+      "bio": "Cal Newport is a computer science professor and author who explores the intersection of technology and productivity.",
+      "topBooks": [
+        "Deep Work",
+        "Digital Minimalism",
+        "So Good They Can't Ignore You"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "price": 499,
+      "image": "https://m.media-amazon.com/images/I/71g2ednj0JL.jpg",
+      "bio": "Morgan Housel is a partner at The Collaborative Fund and a former columnist at The Motley Fool and The Wall Street Journal.",
+      "topBooks": ["The Psychology of Money", "Same as Ever"]
+    },
+    {
+      "id": 7,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "price": 899,
+      "image": "https://m.media-amazon.com/images/I/41-sN-mzwKL._SX374_BO1,204,203,200_.jpg",
+      "bio": "Robert C. Martin (Uncle Bob) is a software engineer and author of several influential books on software craftsmanship and clean coding practices.",
+      "topBooks": ["Clean Code", "The Clean Coder", "Clean Architecture"]
+    },
+    {
+      "id": 8,
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "price": 650,
+      "image": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+      "bio": "Yuval Noah Harari is an Israeli historian and professor of history who examines the history and impact of Homo sapiens on the world.",
+      "topBooks": ["Sapiens", "Homo Deus", "21 Lessons for the 21st Century"]
+    },
+    {
+      "id": 9,
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt & David Thomas",
+      "price": 799,
+      "image": "https://m.media-amazon.com/images/I/41as+WafrFL._SX258_BO1,204,203,200_.jpg",
+      "bio": "Andrew Hunt and David Thomas are well-known software engineers and authors who advocate for pragmatic, adaptable approaches to software development.",
+      "topBooks": ["The Pragmatic Programmer", "Programming Ruby"]
+    },
+    {
+      "id": 10,
+      "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+      "author": "Héctor García & Francesc Miralles",
+      "price": 350,
+      "image": "https://cdn.shopify.com/s/files/1/1163/9680/products/Ikigai_Book.jpg?v=1536585232",
+      "bio": "Héctor García and Francesc Miralles explore the Japanese concept of Ikigai — finding purpose and joy in life through balance and meaning.",
+      "topBooks": ["Ikigai", "The Book of Ichigo Ichie"]
+    }
+  ]
+}

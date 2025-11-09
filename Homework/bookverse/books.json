@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "id": 1762707275257,
+      "title": "The Art of Letting Go",
+      "author": "Nick Trenton",
+      "price": 500,
+      "image": "https://m.media-amazon.com/images/I/71pEaSYkhsL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 1762708325848,
+      "title": "I Don't Love You Anymore",
+      "author": "Rithvik Singh",
+      "price": 655,
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpyMY1V_LmNX4I5YQR70xa0ATaN9g4E9wyxwwiff0HQiakGIrL"
+    },
+    {
+      "id": "3",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 450,
+      "image": "https://m.media-amazon.com/images/I/71din4TLubL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 1762711589053,
+      "title": "Love on the Brain",
+      "author": "Ali Hazelwood",
+      "price": 680,
+      "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1657897729i/59571699.jpg"
+    }
+  ]
+}
