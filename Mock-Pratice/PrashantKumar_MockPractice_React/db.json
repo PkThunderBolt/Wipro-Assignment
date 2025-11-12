@@ -1,0 +1,46 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "title": "Mysore Majesty",
+      "description": "Explore the royal heritage and stunning palaces of Mysore.",
+      "price": 6000,
+      "image": "https://content.r9cdn.net/rimg/dimg/43/2c/fe92dfc3-lm-48454-167a97bd72f.jpg?width=1200&height=630&xhint=1488&yhint=1244&crop=true"
+    },
+    {
+      "id": 2,
+      "title": "Bodh Gaya Bliss",
+      "description": "Visit the sacred land of enlightenment and serene monasteries.",
+      "price": 4500,
+      "image": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/12/shutterstock_402120757-1.webp"
+    },
+    {
+      "id": 3,
+      "title": "Kedarnath Yatra",
+      "description": "Embark on a spiritual and scenic mountain pilgrimage.",
+      "price": 7000,
+      "image": "https://trippydia.com/wp-content/uploads/2021/01/15762198701.png"
+    },
+    {
+      "id": 4,
+      "title": "Goa Delight",
+      "description": "Golden beaches, vibrant nightlife, and endless fun.",
+      "price": 15000,
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/f0/goa.jpg?w=1200&h=700&s=1"
+    },
+    {
+      "id": 5,
+      "title": "Andaman Explorer",
+      "description": "Crystal waters, coral reefs, and island adventures.",
+      "price": 25000,
+      "image": "https://blog.untravel.com/wp-content/uploads/2018/10/Neil-Island-Andaman-and-Nicobar-DC135.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Manali Escape",
+      "description": "Snow peaks, riverside cafes, and Himachal charm.",
+      "price": 8000,
+      "image": "https://i.ytimg.com/vi/7NKk41YVWyA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDNPJFJDXtCyVjPDtzARd1lcUe_4Q"
+    }
+  ]
+}

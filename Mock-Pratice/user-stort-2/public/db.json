@@ -1,0 +1,22 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "name": "Goa Getaway",
+      "price": 7500,
+      "image": "https://experiencemyindia.com/wp-content/uploads/2024/08/Goa-Blog-Only.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Manali Adventure",
+      "price": 9500,
+      "image": "https://www.tripplannersindia.com/assets/blog/images/Thingstodoinmanali/River.webp"
+    },
+    {
+      "id": 3,
+      "name": "Bodh Gaya Spiritual Tour",
+      "price": 5500,
+      "image": "https://s7ap1.scene7.com/is/image/incredibleindia/mahabodhi-temple-gaya-bihar-4-attr-hero?qlt=82&ts=1726740645749"
+    }
+  ]
+}
