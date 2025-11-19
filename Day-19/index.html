@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 16px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>About This App</h1>
+      <p>
+        Welcome to our Express-powered application! This page is served directly
+        from the backend using <b>Node.js + Express</b>. Designed with love 💙
+        and a touch of creativity!
+      </p>
+    </div>
+  </body>
+</html>
