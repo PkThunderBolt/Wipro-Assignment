@@ -1,0 +1,14 @@
+{
+  "name": "day23-restful-apis",
+  "version": "1.0.0",
+  "description": "Simple RESTful API for managing courses with validation and rate limiting.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.1"
+  }
+}
