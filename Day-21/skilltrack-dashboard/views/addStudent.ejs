@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Student</title>
+  </head>
+  <body>
+    <h1>Add Student</h1>
+
+    <% if (error) { %>
+    <p style="color: red"><%= error %></p>
+    <% } %>
+
+    <form action="/students/add" method="POST">
+      <label>Name:</label><br />
+      <input type="text" name="name" /><br /><br />
+
+      <label>Email:</label><br />
+      <input type="email" name="email" /><br /><br />
+
+      <label>Progress:</label><br />
+      <input type="number" name="progress" /><br /><br />
+
+      <button type="submit">Add Student</button>
+    </form>
+  </body>
+</html>

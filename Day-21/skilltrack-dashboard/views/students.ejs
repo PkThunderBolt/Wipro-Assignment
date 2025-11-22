@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students List</title>
+  </head>
+  <body>
+    <h1>All Students</h1>
+
+    <a href="/students/add">Add New Student</a> <br /><br />
+
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Progress</th>
+      </tr>
+
+      <% students.forEach(function(student) { %>
+      <tr>
+        <td><%= student.id %></td>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+        <td><%= student.progress %>%</td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
