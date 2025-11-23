@@ -5,8 +5,8 @@ const session = require("express-session");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy; // for local username-password authentication
 const app = express(); // create an express application
-const PORT = 3000; // port number where server will listen
-app.use(bodyParser.urlencoded({ extended: false })); // to parse form data
+const PORT = 4000; // port number where server will listen
+app.use(bodyParser.urlencoded({ extended: false })); // to parse formdata
 
 // configure session middleware
 app.use(
